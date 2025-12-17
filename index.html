@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaudaz Maritime Pte Ltd | A World of Expertise</title>
+    <meta name="description" content="Your trusted partner for Commercial, Marine and Technical Services. Aaudaz Maritime offers global maritime solutions from Singapore.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy-deep: #0a1628;
+            --navy: #0f2744;
+            --navy-light: #1a3a5c;
+            --teal: #0891b2;
+            --teal-light: #22d3ee;
+            --teal-dark: #0e7490;
+            --cyan-50: #ecfeff;
+            --gold: #f59e0b;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --font: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            --shadow-lg: 0 20px 40px -12px rgba(0,0,0,0.15);
+            --shadow-xl: 0 25px 50px -12px rgba(0,0,0,0.25);
+            --radius: 16px;
+            --radius-lg: 24px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font);
+            font-weight: 400;
+            color: var(--gray-600);
+            line-height: 1.7;
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Scroll margin for fixed header */
+        section[id] { scroll-margin-top: 100px; }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            .hero-waves, .clients-track { animation: none !important; }
+        }
+
+        /* Stats Chips */
+        .stats-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+        .stat-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.625rem 1rem;
+            border-radius: 100px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+        .stat-chip svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--teal-light);
+            fill: none;
+        }
+        .stat-chip strong {
+            color: var(--teal-light);
+        }
+
+        /* Trust Band */
+        .trust-band {
+            background: var(--gray-50);
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .trust-content h3 {
+            font-size: 1.25rem;
+            color: var(--navy);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .client-logos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .client-logo-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 12px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gray-500);
+            text-align: center;
+            min-height: 60px;
+            transition: var(--transition);
+        }
+        .client-logo-card:hover {
+            border-color: var(--teal);
+            box-shadow: var(--shadow);
+        }
+        .trust-testimonial {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            border: 1px solid var(--gray-200);
+            position: relative;
+        }
+        .trust-testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--teal-light);
+            position: absolute;
+            top: 0.5rem;
+            left: 1rem;
+            line-height: 1;
+            font-family: Georgia, serif;
+        }
+        .trust-testimonial p {
+            font-size: 1.0625rem;
+            font-style: italic;
+            color: var(--gray-700);
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+        .trust-testimonial cite {
+            display: block;
+            font-style: normal;
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            padding-left: 2rem;
+        }
+        .trust-testimonial cite strong {
+            color: var(--navy);
+            display: block;
+        }
+        @media (max-width: 900px) {
+            .trust-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .client-logos-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .client-logos-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* Service Cards (redesigned) */
+        .services-overview {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            transition: var(--transition);
+            cursor: pointer;
+            box-shadow: var(--shadow);
+        }
+        .service-card:hover {
+            border-color: var(--teal);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        .service-card h4 {
+            color: var(--navy);
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .service-card .card-tagline {
+            color: var(--teal-dark);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+        .service-card ul li {
+            color: var(--gray-700);
+            font-size: 0.875rem;
+            padding: 0.25rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+        }
+        .service-card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 6px;
+            height: 6px;
+            background: var(--teal);
+            border-radius: 50%;
+        }
+        .service-card .card-link {
+            color: var(--teal);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .service-card .card-link:hover { color: var(--teal-dark); text-decoration: underline; }
+        .service-card .card-link svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            fill: none;
+        }
+        @media (max-width: 1000px) {
+            .services-overview { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .services-overview { grid-template-columns: 1fr; }
+        }
+
+        /* Response time badge */
+        .response-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--cyan-50);
+            color: var(--teal-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        .response-badge svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            fill: none;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .container-lg { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+
+        /* Top Bar */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+            background: var(--navy-deep);
+            padding: 0.5rem 0;
+            font-size: 0.8125rem;
+            transition: var(--transition);
+        }
+        .top-bar-inner {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .top-bar a {
+            color: var(--gray-300);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+        .top-bar a:hover { color: var(--teal-light); }
+        .top-bar svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            fill: none;
+        }
+        @media (max-width: 768px) {
+            .top-bar { display: none; }
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: var(--transition);
+        }
+        header.has-topbar { top: 36px; }
+        @media (max-width: 768px) {
+            header.has-topbar { top: 0; } /* Top bar hidden on mobile */
+        }
+        header.scrolled {
+            top: 36px;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        .logo-mark {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-mark img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.375rem;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        header.scrolled .logo-text { color: var(--navy); }
+
+        nav { display: flex; align-items: center; gap: 0.5rem; }
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            padding: 0.625rem 1rem;
+            font-weight: 500;
+            font-size: 0.9375rem;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        nav a:hover { background: rgba(255,255,255,0.1); }
+        header.scrolled nav a { color: var(--gray-600); }
+        header.scrolled nav a:hover { background: var(--gray-100); color: var(--navy); }
+        
+        .nav-cta {
+            background: var(--white) !important;
+            color: var(--navy) !important;
+            font-weight: 600 !important;
+            margin-left: 0.5rem;
+        }
+        .nav-cta:hover { background: var(--gray-100) !important; }
+        header.scrolled .nav-cta {
+            background: var(--teal) !important;
+            color: var(--white) !important;
+        }
+        header.scrolled .nav-cta:hover { background: var(--teal-dark) !important; }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            margin: 5px 0;
+            transition: var(--transition);
+        }
+        header.scrolled .mobile-toggle span { background: var(--navy); }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--navy-light) 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('hero-image.png');
+            background-size: cover;
+            background-position: center 30%;
+            background-repeat: no-repeat;
+        }
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 22, 40, 0.7) 0%,
+                rgba(10, 22, 40, 0.6) 40%,
+                rgba(10, 22, 40, 0.8) 100%
+            );
+        }
+        .hero-pattern {
+            display: none;
+        }
+        .hero-waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 150px;
+        }
+        .hero-waves svg {
+            position: absolute;
+            bottom: 0;
+            width: 200%;
+            height: 100%;
+            animation: wave 20s linear infinite;
+        }
+        .hero-waves svg:nth-child(2) {
+            opacity: 0.5;
+            animation-delay: -5s;
+            animation-duration: 15s;
+        }
+        @keyframes wave {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 8rem 0 10rem;
+            max-width: 800px;
+        }
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1.25rem;
+            border-radius: 100px;
+            font-size: 0.875rem;
+            color: var(--teal-light);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .hero h1 {
+            font-size: clamp(2.5rem, 5.5vw, 4rem);
+            color: var(--white);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--teal-light) 0%, var(--teal) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-text {
+            font-size: 1.25rem;
+            color: var(--gray-300);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+        .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: var(--font);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+            color: var(--white);
+            box-shadow: 0 4px 14px rgba(8, 145, 178, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(8, 145, 178, 0.5);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--teal);
+            border: 2px solid var(--teal);
+        }
+        .btn-outline:hover {
+            background: var(--teal);
+            color: var(--white);
+        }
+        .btn svg { width: 20px; height: 20px; transition: var(--transition); }
+        .btn:hover svg { transform: translateX(4px); }
+
+        /* Sections */
+        section { padding: 6rem 0; }
+        .section-dark { background: var(--gray-50); }
+        .section-navy { 
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+            color: var(--white);
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1rem;
+        }
+        .section-navy .section-label { color: var(--teal-light); }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--navy);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .section-navy .section-title { color: var(--white); }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            line-height: 1.8;
+        }
+        .section-navy .section-subtitle { color: var(--gray-300); }
+        .section-dark .section-subtitle { color: var(--gray-700); }
+
+        .section-header {
+            margin-bottom: 4rem;
+        }
+        .section-header.center {
+            text-align: center;
+        }
+        .section-header.center .section-subtitle {
+            margin: 0 auto;
+        }
+
+        /* Intro Section */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .intro-content h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            color: var(--navy);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        .intro-content p {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        .intro-image {
+            position: relative;
+        }
+        .intro-image img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            object-fit: cover;
+            box-shadow: var(--shadow-lg);
+        }
+        .intro-image .placeholder-img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+        }
+        .placeholder-img {
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--teal-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 4rem;
+        }
+        .placeholder-img svg {
+            width: 120px;
+            height: 120px;
+            opacity: 0.3;
+        }
+
+        /* Service Blocks */
+        .service-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 4rem 0;
+        }
+        .service-block:nth-child(even) .service-visual { order: -1; }
+        .service-block:nth-child(even) { direction: rtl; }
+        .service-block:nth-child(even) > * { direction: ltr; }
+
+        .service-content h3 {
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            color: var(--navy);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .service-content p {
+            font-size: 1.0625rem;
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .service-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .service-tag {
+            background: var(--cyan-50);
+            color: var(--teal-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .service-visual .placeholder-img {
+            aspect-ratio: 4/3;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+        }
+        .service-visual .service-img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Promise/Process Section */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+        .process-card {
+            text-align: center;
+            padding: 2rem;
+        }
+        .process-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 10px 30px rgba(8, 145, 178, 0.3);
+        }
+        .process-icon svg {
+            width: 36px;
+            height: 36px;
+            stroke: var(--white);
+            fill: none;
+            stroke-width: 2;
+        }
+        .process-card h4 {
+            font-size: 1.25rem;
+            color: var(--navy);
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .process-card p {
+            font-size: 0.9375rem;
+            color: var(--gray-500);
+        }
+
+        /* Commitments Grid */
+        .commitments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .commitment-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-100);
+            transition: var(--transition);
+        }
+        .commitment-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .commitment-card h4 {
+            font-size: 1.125rem;
+            color: var(--navy);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .commitment-card p {
+            font-size: 0.9375rem;
+            color: var(--gray-500);
+        }
+
+        /* Clients */
+        .clients-scroll {
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        .clients-track {
+            display: flex;
+            gap: 3rem;
+            animation: scroll 30s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .client-logo {
+            flex-shrink: 0;
+            width: 160px;
+            height: 80px;
+            background: var(--white);
+            border: 1px solid var(--gray-100);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--gray-400);
+            font-size: 0.8125rem;
+        }
+
+        /* Testimonial */
+        .testimonial-section {
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+            padding: 6rem 0;
+        }
+        .testimonial-card {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .testimonial-quote {
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            color: var(--white);
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .testimonial-avatar {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        .testimonial-info h5 {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .testimonial-info span {
+            color: var(--gray-400);
+            font-size: 0.875rem;
+        }
+
+        /* Founder */
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .founder-image {
+            position: sticky;
+            top: 8rem;
+        }
+        .founder-photo {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+        }
+        .founder-content h2 {
+            font-size: 2.5rem;
+            color: var(--navy);
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+        .founder-role {
+            color: var(--teal);
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 2rem;
+        }
+        .founder-content p {
+            font-size: 1.0625rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .founder-timeline {
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--gray-200);
+        }
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--gray-100);
+        }
+        .timeline-item:last-child { border-bottom: none; margin-bottom: 0; }
+        .timeline-period {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--teal);
+        }
+        .timeline-title {
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+        }
+        .timeline-company {
+            font-size: 0.9375rem;
+            color: var(--gray-500);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+            padding: 6rem 0;
+            text-align: center;
+        }
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .cta-content h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--white);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .cta-content p {
+            font-size: 1.125rem;
+            color: var(--gray-300);
+            margin-bottom: 2rem;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+        }
+        .contact-info h3 {
+            font-size: 1.5rem;
+            color: var(--navy);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+        .contact-item label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.375rem;
+        }
+        .contact-item a {
+            color: var(--gray-700);
+            text-decoration: none;
+            font-size: 1.0625rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .contact-item a:hover { color: var(--teal); }
+
+        .contact-form {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-100);
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-group { margin-bottom: 1.25rem; }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--gray-700);
+            margin-bottom: 0.5rem;
+            font-size: 0.9375rem;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 10px;
+            font-family: var(--font);
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--white);
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--teal);
+        }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+
+        /* Footer */
+        footer {
+            background: var(--navy-deep);
+            color: var(--gray-400);
+            padding: 5rem 0 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        .footer-brand p {
+            margin-top: 1.5rem;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            max-width: 280px;
+        }
+        .footer-col h4 {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-col a {
+            display: block;
+            color: var(--gray-400);
+            text-decoration: none;
+            margin-bottom: 0.75rem;
+            font-size: 0.9375rem;
+            transition: var(--transition);
+        }
+        .footer-col a:hover { color: var(--teal-light); }
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .footer-bottom p { font-size: 0.875rem; }
+        .footer-social { display: flex; gap: 1rem; }
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-400);
+            transition: var(--transition);
+        }
+        .footer-social a:hover { background: var(--teal); color: var(--white); }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #25D366;
+            color: var(--white);
+            padding: 0.875rem 1.25rem;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+        }
+        .whatsapp-float:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+        }
+        .whatsapp-float svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+        .whatsapp-float span {
+            display: inline;
+        }
+        
+        /* Mobile floating contact buttons */
+        .mobile-contact-buttons {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 1.5rem;
+                right: 1.5rem;
+                padding: 1rem;
+            }
+            .whatsapp-float span { display: none; }
+            
+            .mobile-contact-buttons {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 998;
+                background: var(--navy-deep);
+                padding: 0.75rem 1rem;
+                gap: 0.5rem;
+                border-top: 1px solid rgba(255,255,255,0.1);
+            }
+            .mobile-contact-btn {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                padding: 0.75rem;
+                border-radius: 10px;
+                text-decoration: none;
+                font-size: 0.8125rem;
+                font-weight: 600;
+                transition: var(--transition);
+            }
+            .mobile-contact-btn svg {
+                width: 18px;
+                height: 18px;
+            }
+            .mobile-contact-btn.call {
+                background: var(--teal);
+                color: var(--white);
+            }
+            .mobile-contact-btn.call svg { stroke: currentColor; fill: none; }
+            .mobile-contact-btn.email {
+                background: rgba(255,255,255,0.1);
+                color: var(--white);
+            }
+            .mobile-contact-btn.email svg { stroke: currentColor; fill: none; }
+            .mobile-contact-btn.whatsapp {
+                background: #25D366;
+                color: var(--white);
+            }
+            .mobile-contact-btn.whatsapp svg { fill: currentColor; }
+            
+            /* Hide floating WhatsApp on mobile when we have the bar */
+            .whatsapp-float { display: none; }
+            
+            /* Add bottom padding to body for mobile contact bar */
+            body { padding-bottom: 70px; }
+        }
+
+        /* Service Modal */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 22, 40, 0.8);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            max-width: 700px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            transform: translateY(20px) scale(0.95);
+            transition: var(--transition);
+            position: relative;
+        }
+        .modal-overlay.active .modal {
+            transform: translateY(0) scale(1);
+        }
+        .modal-header {
+            padding: 2rem 2rem 1rem;
+            border-bottom: 1px solid var(--gray-100);
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            z-index: 1;
+        }
+        .modal-header h3 {
+            font-size: 1.5rem;
+            color: var(--navy);
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+        .modal-header span {
+            font-size: 0.8125rem;
+            color: var(--teal);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: var(--gray-100);
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        .modal-close:hover {
+            background: var(--gray-200);
+        }
+        .modal-close svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--gray-600);
+        }
+        .modal-body {
+            padding: 1.5rem 2rem 2rem;
+        }
+        .modal-body p {
+            font-size: 1rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .modal-body p:last-child {
+            margin-bottom: 0;
+        }
+        .modal-body ul {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        .modal-body ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--gray-600);
+        }
+        .modal-body ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 6px;
+            height: 6px;
+            background: var(--teal);
+            border-radius: 50%;
+        }
+        .modal-body h4 {
+            font-size: 1rem;
+            color: var(--navy);
+            font-weight: 700;
+            margin: 1.5rem 0 0.75rem;
+        }
+        .modal-cta {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--gray-100);
+        }
+
+        /* Clickable service tags (now buttons for accessibility) */
+        .service-tag.clickable {
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        .service-tag.clickable:hover {
+            background: var(--teal);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        .service-tag.clickable:focus {
+            outline: 2px solid var(--teal-light);
+            outline-offset: 2px;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .intro-grid,
+            .service-block,
+            .founder-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .service-block:nth-child(even) .service-visual { order: 0; }
+            .service-block:nth-child(even) { direction: ltr; }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .commitments-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .founder-image { position: static; max-width: 350px; margin: 0 auto; }
+        }
+        @media (max-width: 768px) {
+            section { padding: 4rem 0; }
+            .container { padding: 0 1.5rem; }
+            nav { 
+                display: none;
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: var(--shadow-lg);
+            }
+            nav.active { display: flex; }
+            nav a { color: var(--gray-600); padding: 1rem; width: 100%; }
+            .mobile-toggle { display: block; }
+            .process-grid { grid-template-columns: 1fr; }
+            .commitments-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .hero-content { padding: 7rem 0 8rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar" id="topBar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <a href="mailto:supply@aaudaz.com">
+                    <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Marine & Technical: supply@aaudaz.com
+                </a>
+                <a href="mailto:ops@aaudaz.com">
+                    <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Bunker Ops: ops@aaudaz.com
+                </a>
+                <a href="mailto:abhay@aaudaz.com">
+                    <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Commercial: abhay@aaudaz.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="has-topbar">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#hero" class="logo">
+                    <div class="logo-mark"><img src="aaudaz-logo.webp" alt="Aaudaz Maritime Logo"></div>
+                    <span class="logo-text">Aaudaz Maritime</span>
+                </a>
+                <button class="mobile-toggle" onclick="toggleNav()" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav id="nav">
+                    <a href="#services">Services</a>
+                    <a href="#promise">Our Promise</a>
+                    <a href="#founder">Founder</a>
+                    <a href="#contact" class="nav-cta">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-waves">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,60 C300,120 600,0 900,60 C1200,120 1200,120 1200,120 L1200,120 L0,120 Z" fill="rgba(255,255,255,1)"/>
+            </svg>
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,60 C300,120 600,0 900,60 C1200,120 1200,120 1200,120 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.5)"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-label">Your Link to Excellence</div>
+                <h1>Your trusted partner for <span>global maritime solutions</span></h1>
+                <p class="hero-text">We deliver Commercial, Marine and Technical services that adapt to your needs in the ever-changing maritime environment. With 40+ years of expertise and vetted partners worldwide.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        Request a Quote
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                </div>
+                <div class="stats-chips">
+                    <span class="stat-chip">
+                        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                        <strong>60+</strong> Countries Coverage
+                    </span>
+                    <span class="stat-chip">
+                        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                        <strong>1,400+</strong> Surveys (2021-2025)
+                    </span>
+                    <span class="stat-chip">
+                        <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <strong>24/7</strong> Ops Desk
+                    </span>
+                    <span class="stat-chip">
+                        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                        Single Point of Contact
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Band -->
+    <section class="trust-band" id="trust">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-content fade-in">
+                    <h3>Trusted by leading companies worldwide</h3>
+                    <div class="client-logos-grid">
+                        <div class="client-logo-card">Anglo-Eastern</div>
+                        <div class="client-logo-card">Bahri</div>
+                        <div class="client-logo-card">BW Epic Kosan</div>
+                        <div class="client-logo-card">Gard P&I</div>
+                        <div class="client-logo-card">Hafnia</div>
+                        <div class="client-logo-card">Integr8 Fuels</div>
+                        <div class="client-logo-card">MOL</div>
+                        <div class="client-logo-card">Navig8</div>
+                        <div class="client-logo-card">Norden</div>
+                        <div class="client-logo-card">Synergy Group</div>
+                        <div class="client-logo-card">Wallem</div>
+                        <div class="client-logo-card">+40 more</div>
+                    </div>
+                </div>
+                <div class="trust-testimonial fade-in">
+                    <p>Aaudaz has been instrumental in managing our bunker survey requirements across multiple ports. Their standardised reporting and prompt turnaround have significantly improved our inventory tracking.</p>
+                    <cite>
+                        <strong>Fleet Manager, MR Tanker Pool</strong>
+                        Major European Ship Manager
+                    </cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section id="intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content fade-in">
+                    <span class="section-label">Who We Are</span>
+                    <h2>We bring decades of maritime expertise to every operation.</h2>
+                    <p>Aaudaz Maritime is a Singapore-based maritime services company serving ship owners, managers, charterers, pool managers, and commercial operators worldwide.</p>
+                    <p>We constantly adapt to our clients' requirements, providing professional services through vetted partners across the globe. From bunker surveys in 60+ countries to complex commercial operations, we're your extended team.</p>
+                    <a href="#services" class="btn btn-outline">View Our Services</a>
+                </div>
+                <div class="intro-image fade-in">
+                    <img src="intro-image.png" alt="Ships at anchor in Singapore Strait with Marina Bay Sands skyline">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-dark">
+        <div class="container">
+            <div class="section-header center fade-in">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Comprehensive maritime solutions</h2>
+                <p class="section-subtitle">From pre-fixture to post-fixture operations, we deliver excellence across the entire maritime spectrum.</p>
+            </div>
+
+            <!-- Service Cards Overview -->
+            <div class="services-overview fade-in">
+                <div class="service-card" onclick="document.getElementById('commercial-section').scrollIntoView({behavior:'smooth'})">
+                    <h4>Commercial</h4>
+                    <p class="card-tagline">Pre-fixture to post-fixture support</p>
+                    <ul>
+                        <li>24/7 Operations Desk</li>
+                        <li>Voyage Performance Analytics</li>
+                        <li>Claims & Dispute Handling</li>
+                    </ul>
+                    <span class="card-link">View details <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+                <div class="service-card" onclick="document.getElementById('marine-section').scrollIntoView({behavior:'smooth'})">
+                    <h4>Marine</h4>
+                    <p class="card-tagline">60+ countries surveyor network</p>
+                    <ul>
+                        <li>BQS/BIS Bunker Surveys</li>
+                        <li>Tank & Hold Cleaning</li>
+                        <li>Waste Disposal Services</li>
+                    </ul>
+                    <span class="card-link">View details <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+                <div class="service-card" onclick="document.getElementById('technical-section').scrollIntoView({behavior:'smooth'})">
+                    <h4>Technical</h4>
+                    <p class="card-tagline">150+ diving operations completed</p>
+                    <ul>
+                        <li>Hull Inspections & Cleaning</li>
+                        <li>Machinery Repairs</li>
+                        <li>Pre-purchase Inspections</li>
+                    </ul>
+                    <span class="card-link">View details <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+                <div class="service-card" onclick="document.getElementById('procurement-section').scrollIntoView({behavior:'smooth'})">
+                    <h4>Procurement</h4>
+                    <p class="card-tagline">Global stores & spares supply</p>
+                    <ul>
+                        <li>Deck & Engine Spares</li>
+                        <li>Chemicals & Equipment</li>
+                        <li>Worldwide Delivery</li>
+                    </ul>
+                    <span class="card-link">View details <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                </div>
+            </div>
+
+            <!-- Commercial -->
+            <div class="service-block fade-in" id="commercial-section">
+                <div class="service-content">
+                    <span class="section-label">Commercial</span>
+                    <h3>Commercial Operations</h3>
+                    <p>Professionally managing your commercial tanker operations from pre-fixture to post-fixture. Voyage performance analysis, dispute handling, STS consultancy, and pool operations advisory.</p>
+                    <div class="service-tags">
+                        <button type="button" class="service-tag clickable" onclick="openModal('voyage-analytics')">Analytics (Voyage)</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('cargo-disposal')">Cargo Disposal</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('cargo-expediting')">Cargo Expediting</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('claims-handling')">Claims Handling</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('commercial-consultancy')">Commercial Consultancy</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('commercial-ops')">Commercial Ops Desk</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('draft-surveys')">Draft Surveys</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('pool-advisory')">Pool Advisory</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('ship-ops-consultancy')">Ship Ops Consultancy</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('sts-consultancy')">STS Consultancy</button>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                </div>
+                <div class="service-visual">
+                    <img src="commercial-image.png" alt="Tanker at oil terminal during cargo operations" class="service-img">
+                </div>
+            </div>
+
+            <!-- Marine -->
+            <div class="service-block fade-in" id="marine-section">
+                <div class="service-content">
+                    <span class="section-label">Marine</span>
+                    <h3>Marine Services</h3>
+                    <p>A selection of marine services catering to owners and charterers requirements, including bunker surveys, cargo hold and tank cleaning, tank cleaning advisory, superintendency, and slop and sludge disposal including debunkering operations.</p>
+                    <div class="service-tags">
+                        <button type="button" class="service-tag clickable" onclick="openModal('bunker-surveys')">BIS and BQS Surveys</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('bunker-supplies')">Bunker Supplies</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('bunker-testing')">Bunker Testing</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('cargo-claims')">Cargo Claims</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('tank-cleaning')">Tank Cleaning</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('waste-disposal')">Oily Waste Disposal</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('vessel-visits')">Vessel Inspections</button>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                </div>
+                <div class="service-visual">
+                    <img src="marine-image.png" alt="Ship-to-ship transfer operation at sea" class="service-img">
+                </div>
+            </div>
+
+            <!-- Technical -->
+            <div class="service-block fade-in" id="technical-section">
+                <div class="service-content">
+                    <span class="section-label">Technical</span>
+                    <h3>Technical Services</h3>
+                    <p>Our group offers very competitive technical services for owners and their technical managers. From technical inspections and condition surveys to hull inspections and machinery repairs, all services come with competitive pricing and a wealth of expertise.</p>
+                    <div class="service-tags">
+                        <button type="button" class="service-tag clickable" onclick="openModal('hull-services')">Underwater Hull Services</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('cathodic-protection')">Cathodic Protection & MGPS</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('technical-inspections')">Technical Inspections</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('prepurchase-inspections')">Pre-purchase Inspections</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('machinery-repairs')">Machinery Repairs</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('engine-room-disposal')">Engine Room Disposal</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('sampling-testing')">Sampling & Lab Testing</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('paint-touchup')">Paint Touchup & Draft Marks</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('workshop-repairs')">Workshop Repairs</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('riding-crew')">Riding Crew</button>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                </div>
+                <div class="service-visual">
+                    <img src="technical-image.png" alt="Commercial divers performing underwater propeller repairs" class="service-img">
+                </div>
+            </div>
+
+            <!-- Procurement -->
+            <div class="service-block fade-in" id="procurement-section">
+                <div class="service-content">
+                    <span class="section-label">Procurement</span>
+                    <h3>Procurement Services</h3>
+                    <p>Through dedicated partners, we globally arrange procurement of stores and spares including mooring ropes, chemicals, tank cleaning equipment, machinery spares, radio-nav and LSAFFA items, cabin stores, and electric motors.</p>
+                    <div class="service-tags">
+                        <button type="button" class="service-tag clickable" onclick="openModal('stores-spares')">Stores</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('chemicals')">Chemical Supply</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('equipment')">Tank Cleaning Equipment</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('deck-spares')">Deck & Machinery Spares</button>
+                        <button type="button" class="service-tag clickable" onclick="openModal('logistics')">Logistics</button>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                </div>
+                <div class="service-visual">
+                    <img src="procurement-image.png" alt="Container ship at port with gantry cranes" class="service-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promise/Process -->
+    <section id="promise">
+        <div class="container">
+            <div class="section-header center fade-in">
+                <span class="section-label">Our Promise</span>
+                <h2 class="section-title">We add value at every stage</h2>
+                <p class="section-subtitle">Professional, competitive services that consistently exceed expectations. This is our commitment to you.</p>
+            </div>
+
+            <div class="process-grid fade-in">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>Professional</h4>
+                    <p>Highest standards backed by decades of maritime experience</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                    <h4>Transparent</h4>
+                    <p>Complete openness at every stage. No hidden costs.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h4>Vetted Partners</h4>
+                    <p>Thoroughly screened vendors ensuring quality delivery</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h4>Your Team</h4>
+                    <p>We become an extension of your operations team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Commitments -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">What We Stand For</span>
+                <h2 class="section-title">Our Commitments</h2>
+            </div>
+            <div class="commitments-grid fade-in">
+                <div class="commitment-card">
+                    <h4>Professional Service</h4>
+                    <p>We deliver services of the highest professional standard, backed by decades of maritime industry experience.</p>
+                </div>
+                <div class="commitment-card">
+                    <h4>Competitive Edge</h4>
+                    <p>Our pricing remains competitive without compromising on quality or service standards.</p>
+                </div>
+                <div class="commitment-card">
+                    <h4>Exceed Expectations</h4>
+                    <p>We go beyond the brief, anticipating needs and delivering results that surpass what is expected.</p>
+                </div>
+                <div class="commitment-card">
+                    <h4>Transparency</h4>
+                    <p>Every stage of our operations is conducted with complete openness. No hidden costs, no surprises.</p>
+                </div>
+                <div class="commitment-card">
+                    <h4>Client Control</h4>
+                    <p>We perform services on your behalf while ensuring you retain total control over operations.</p>
+                </div>
+                <div class="commitment-card">
+                    <h4>Excelling Standards</h4>
+                    <p>We are uncompromising on service standards. Every operation is closely monitored against the highest benchmarks.</p>
+                </div>
+                <div class="commitment-card">
+                    <h4>Vetted Vendors</h4>
+                    <p>The vendors we bring to our clients are thoroughly vetted, ensuring the highest standards of service delivery.</p>
+                </div>
+                <div class="commitment-card">
+                    <h4>Voyage Economy</h4>
+                    <p>We work with complete dedication to protect your reputation and contribute to voyage economy.</p>
+                </div>
+                <div class="commitment-card">
+                    <h4>Your Extended Team</h4>
+                    <p>We are not just a vendor - we become part of your operations and technical team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-card fade-in">
+                <p class="testimonial-quote">"Aaudaz Maritime has been instrumental in optimizing our voyage operations. Their expertise in commercial tanker operations and claims handling has saved us significant time and resources. Truly a trusted partner."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">TC</div>
+                    <div class="testimonial-info">
+                        <h5>Technical Manager</h5>
+                        <span>International Ship Owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder -->
+    <section id="founder" class="section-dark">
+        <div class="container">
+            <div class="founder-grid">
+                <div class="founder-image fade-in">
+                    <img src="founder-image.png" alt="Capt. Abhay Charan, Founder of Aaudaz Maritime" class="founder-photo">
+                </div>
+                <div class="founder-content fade-in">
+                    <span class="section-label">Our Founder</span>
+                    <h2>Capt. Abhay Charan</h2>
+                    <p class="founder-role">Founder & Principal Consultant</p>
+                    <p>A Global Commercial Operations leader with diversified areas of functionalities within the Maritime industry. A professional with an enriched background in knowledge and hands-on experience managing tanker, chemical and dry bulk operations. Well recognized for skills and ability to excel in complex and challenging environments.</p>
+                    <p>Core expertise includes dispute resolution and claims handling, contract negotiation, office start-ups, business development, project planning, and tanker and dry bulk operations.</p>
+                    
+                    <div class="founder-timeline">
+                        <h4 style="color: var(--navy); font-weight: 700; margin-bottom: 1.5rem;">Career Journey</h4>
+                        <div class="timeline-item">
+                            <span class="timeline-period">2018 - Present</span>
+                            <div>
+                                <div class="timeline-title">Founder</div>
+                                <div class="timeline-company">Aaudaz Maritime Pte Ltd, Singapore</div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-period">2004 - 2018</span>
+                            <div>
+                                <div class="timeline-title">Global Head of Tanker Operations</div>
+                                <div class="timeline-company">Navig8 Asia Ltd</div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-period">1999 - 2004</span>
+                            <div>
+                                <div class="timeline-title">Senior Operations Superintendent</div>
+                                <div class="timeline-company">Tanker Pacific Management</div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-period">1986 - 1999</span>
+                            <div>
+                                <div class="timeline-title">Master Mariner</div>
+                                <div class="timeline-company">Great Eastern Shipping Co</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <span class="section-label" style="color: var(--teal-light);">Ready to Get Started?</span>
+                <h2>Let's work together</h2>
+                <p>Have a project or enquiry? We'd love to hear from you. Our team is ready to help optimize your maritime operations.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    <a href="mailto:abhay@aaudaz.com" class="btn btn-secondary">Email Directly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Get in touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Reach out directly</h3>
+                    <div class="contact-item">
+                        <label>Marine & Technical</label>
+                        <a href="mailto:supply@aaudaz.com">supply@aaudaz.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <label>Bunker Operations</label>
+                        <a href="mailto:ops@aaudaz.com">ops@aaudaz.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <label>Commercial</label>
+                        <a href="mailto:abhay@aaudaz.com">abhay@aaudaz.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <label>Phone</label>
+                        <a href="tel:+6598335882">+65 9833 5882</a>
+                    </div>
+                    <div class="contact-item" style="margin-top: 2rem;">
+                        <label>Company</label>
+                        <p style="color: var(--gray-600); margin: 0;">Aaudaz Maritime Pte Ltd<br>6A Shenton Way #04-01<br>OUE Downtown Gallery<br>Singapore 068815</p>
+                    </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="service-type">What do you need? *</label>
+                                <select id="service-type" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="bqs">Bunker Quantity Survey</option>
+                                    <option value="ops">Commercial Operations Support</option>
+                                    <option value="tank-cleaning">Tank/Hold Cleaning</option>
+                                    <option value="hull">Hull Inspection/Cleaning</option>
+                                    <option value="waste">Slop/Waste Disposal</option>
+                                    <option value="technical">Technical Attendance</option>
+                                    <option value="procurement">Procurement/Spares</option>
+                                    <option value="sts">STS Consultancy</option>
+                                    <option value="other">Other Enquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Details *</label>
+                            <textarea id="message" required placeholder="Include vessel name, port, and timing if applicable..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Request a Quote
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;margin-left:0.5rem"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <div class="response-badge" style="margin-top: 1rem; justify-content: center; width: 100%;">
+                            <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            We typically respond within 2 hours during business hours
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients" class="section-dark">
+        <div class="container">
+            <div class="section-header center fade-in">
+                <span class="section-label">Our Clients</span>
+                <h2 class="section-title">Trusted worldwide</h2>
+                <p class="section-subtitle">Serving ship owners, technical managers, P&I clubs, charterers, and commercial operators globally.</p>
+            </div>
+        </div>
+        <div class="clients-scroll">
+            <div class="clients-track" id="clientsTrack">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <div class="logo-mark"><img src="aaudaz-logo.webp" alt="Aaudaz Maritime Logo"></div>
+                        <span class="logo-text" style="color: var(--white);">Aaudaz Maritime</span>
+                    </a>
+                    <p>Your link to excellence. Serving the global maritime industry from Singapore since 2018.</p>
+                    <p style="font-size: 0.8125rem; opacity: 0.8; margin-top: 0.5rem;">6A Shenton Way #04-01<br>OUE Downtown Gallery<br>Singapore 068815</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="#services">Commercial</a>
+                    <a href="#services">Marine</a>
+                    <a href="#services">Technical</a>
+                    <a href="#services">Procurement</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#promise">Our Promise</a>
+                    <a href="#founder">Founder</a>
+                    <a href="#clients">Clients</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="mailto:supply@aaudaz.com">supply@aaudaz.com</a>
+                    <a href="mailto:ops@aaudaz.com">ops@aaudaz.com</a>
+                    <a href="mailto:abhay@aaudaz.com">abhay@aaudaz.com</a>
+                    <a href="tel:+6598335882">+65 9833 5882</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Aaudaz Maritime Pte Ltd. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/capt-abhay-charan" target="_blank" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Detail Modals -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <span id="modal-category">Marine Services</span>
+                <h3 id="modal-title">Service Title</h3>
+                <button class="modal-close" onclick="closeModal()" aria-label="Close modal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6598335882?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20maritime%20services." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span>Chat with us</span>
+    </a>
+
+    <!-- Mobile Contact Bar -->
+    <div class="mobile-contact-buttons">
+        <a href="tel:+6598335882" class="mobile-contact-btn call">
+            <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call
+        </a>
+        <a href="mailto:ops@aaudaz.com" class="mobile-contact-btn email">
+            <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+        </a>
+        <a href="https://wa.me/6598335882" class="mobile-contact-btn whatsapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+        </a>
+    </div>
+
+    <script>
+        // Service detail content
+        const serviceDetails = {
+            // COMMERCIAL SERVICES
+            'voyage-analytics': {
+                category: 'Commercial Services',
+                title: 'Voyage Performance Analytics',
+                content: `
+                    <p>We assist Owners towards voyage optimisation by carrying out performance analysis and cargo heating - both planning and monitoring.</p>
+                    <p>Ship specific fuel curves, trade patterns, weather and hull conditions are monitored and informed decisions made. A regime is followed regarding hull inspections and fouling, and hull cleanings planned accordingly.</p>
+                    <p>Our performance tool not only covers at sea periods but also in port performance, including times and consumptions for various operations.</p>
+                `
+            },
+            'cargo-disposal': {
+                category: 'Commercial Services',
+                title: 'Cargo Disposal Services',
+                content: `
+                    <p>We offer competitive disposal of contaminated/off-spec cargos - both in bulk and in containers in Singapore and other major ports.</p>
+                    <p>Where possible, we endeavour to offer good purchase prices for such cargos discharged in compliance with local regulations.</p>
+                `
+            },
+            'cargo-expediting': {
+                category: 'Commercial Services',
+                title: 'Cargo Expediting',
+                content: `
+                    <p>We arrange cargo expediting services through experienced personnel based in key ports.</p>
+                    <p>With good local expertise, they ensure quick port turnaround, smooth operations and no delays for vessel's account.</p>
+                `
+            },
+            'commercial-consultancy': {
+                category: 'Commercial Services',
+                title: 'Commercial Consultancy',
+                content: `
+                    <p>For operations offices, we offer a review of their operations procedures. We can also assist Owners to set up their operations team on a project basis.</p>
+                    <p>In both cases we ensure the operations procedures are in line with industry standards and are lucid yet comprehensive for all levels of operator to comprehend and comply.</p>
+                    <p>We assist clients to negotiate and set up vendor contracts in line with industry levels.</p>
+                `
+            },
+            'commercial-ops': {
+                category: 'Commercial Services',
+                title: 'Commercial Operations Desk',
+                content: `
+                    <p><strong>18+ years of expertise</strong> in commercial operations based out of Singapore. Tailor-made solutions for your fleet's commercial operations at competitive pricing.</p>
+                    <p>We cover every aspect of the voyage 24/7, from pre-fixture to post-fixture including invoice and claims handling, voyage optimization, and disputes handling on behalf of clients.</p>
+                    <h4>Pre-fixture Tasks</h4>
+                    <p>Cargo intakes, terminal and vetting clearances, tank preparation, review of fixture recap, bunkering and tank preparation requirements.</p>
+                    <h4>Post-fixture Tasks</h4>
+                    <p>Voyage communications, vessel compliance to voyage orders, passage and cargo heating planning, and other voyage related matters.</p>
+                    <h4>After Voyage Conclusion</h4>
+                    <p>Preparation of invoices, submission and follow-up of claims.</p>
+                `
+            },
+            'claims-handling': {
+                category: 'Commercial Services',
+                title: 'Dispute and Claims Handling',
+                content: `
+                    <p>We assist clients in facilitating their demurrage claims - from review and filing of the claim to its settlement.</p>
+                    <p>We handle claims and disputes including cargo off-spec, tank failures, bunker disputes, demurrage and deviation claims. Professional advice is given as to the strength of the client's claim and settlement solutions offered.</p>
+                `
+            },
+            'draft-surveys': {
+                category: 'Commercial Services',
+                title: 'Draft Surveys',
+                content: `
+                    <p>We arrange draft surveys as per client request in Singapore.</p>
+                `
+            },
+            'pool-advisory': {
+                category: 'Commercial Services',
+                title: 'Pool Operations Advisory',
+                content: `
+                    <p>We assist in setting up Tanker Pool operations. These include procedures, pool point evaluations, claim handling and client relationships.</p>
+                    <p>We assist in software development/customisation, write-up of pool policies and doctrines, and staff training in handling of Tanker pools.</p>
+                `
+            },
+            'ship-ops-consultancy': {
+                category: 'Commercial Services',
+                title: 'Ship Operations Consultancy',
+                content: `
+                    <p>We offer a review of ops procedures and assist owners in setting up their ops team on a project basis.</p>
+                    <p>Our services include:</p>
+                    <ul>
+                        <li>Troubleshooting on shipping systems software queries and improving users' experience</li>
+                        <li>Your outsourced "Super User" for shipping systems software</li>
+                        <li>Shipping systems software training, both face-to-face and online</li>
+                    </ul>
+                `
+            },
+            'sts-consultancy': {
+                category: 'Commercial Services',
+                title: 'STS Risk Consultancy',
+                content: `
+                    <p>Risk assessment and screening services for STS operations, including drills, training and simulator exercises. STS incident investigations and dispute resolution.</p>
+                    <p>Project-based STS operations set up at new locations including arranging POACs, supply of hoses, fenders and support services.</p>
+                    <p>We are the <strong>commercial partners of DYNAMARINe-Consultants</strong> for STS, Technical studies, Statutory compliance issues, condition surveys and risk management.</p>
+                    <p>We prepare STS manuals for dry bulk vessels and provide screening and guidance to new STS locations or locations not frequented by clients.</p>
+                `
+            },
+
+            // MARINE SERVICES
+            'bunker-surveys': {
+                category: 'Marine Services',
+                title: 'BIS and BQS Surveys',
+                content: `
+                    <p>An established global network of local surveyors in <strong>over 60 countries</strong>, including Japan, South Korea, Philippines, China, Hong Kong, Taiwan, Singapore, Malaysia, Australia, New Zealand, India, Fujairah, Saudi Arabia, Suez, Mediterranean, UK, Norway, ARA, Nigeria, South Africa, Brazil, USA, Panama and more.</p>
+                    <p>Between 2021 and May 2025, we have successfully concluded <strong>1,400 bunker surveys</strong>. A standard procedure is adopted across all ports ensuring thorough surveys on board.</p>
+                    <p>Our reports and database ensure better tracking of on-board inventories and ship-specific trends, while also profiling suppliers and barges. Comprehensive and prompt reporting includes month-end analysis of surveys and deliveries.</p>
+                    <p>Each survey is monitored closely by Aaudaz, with final reports vetted in detail before forwarding to clients. Single point of contact for all BQS appointments globally: <strong>ops@aaudaz.com</strong></p>
+                `
+            },
+            'bunker-supplies': {
+                category: 'Marine Services',
+                title: 'Bunker Supplies',
+                content: `
+                    <p>As brokers we arrange competitive quotes for bunker supplies for our clients, specially in Turkish waters and Singapore OPL.</p>
+                    <p>Bunker stems through us allow for professional BQS services as well.</p>
+                `
+            },
+            'bunker-testing': {
+                category: 'Marine Services',
+                title: 'Bunker Testing',
+                content: `
+                    <p>Bunker sampling and testing services through accredited laboratories.</p>
+                    <p>Our reports and database ensure better tracking of on-board inventories and ship-specific trends, while also profiling suppliers and barges.</p>
+                `
+            },
+            'tank-cleaning': {
+                category: 'Marine Services',
+                title: 'Cargo Hold, Bunker and Cargo Tank Cleaning',
+                content: `
+                    <p>Sludge removal, de-mucking and tank cleaning for DPP-CPP conversion and dry-docking in Singapore, OPL Singapore, major China ports and Fujairah.</p>
+                    <p>We provide troubleshooting for settling/service tanks issues of hardened bunkers, and supply tank cleaning pumps, machines, hoses and equipment.</p>
+                    <p>Cargo and bunker tank and cargo hold cleaning advisory services for vessels - we arrange supercargoes, manpower and remote advisory. Cargo tank inspections for assessing fitness for next cargo.</p>
+                    <p>Tank and cargo hold cleaning chemicals and test reagents supply available globally.</p>
+                `
+            },
+            'waste-disposal': {
+                category: 'Marine Services',
+                title: 'Oily Waste, Bunker and Chemical Waste Disposal',
+                content: `
+                    <p>Disposal of Annex I slops, bilge water, off-spec bunkers and sludge. Chemical/Annex II slops disposal also available.</p>
+                    <p>Operations at OPL Singapore, in-port Singapore, Malaysia, South Korea, India (Cochin and Kandla/Sikka), Fujairah and China.</p>
+                    <p>Very competitive pricing for barging and disposal, with oil rebates through our vetted assets.</p>
+                `
+            },
+            'vessel-visits': {
+                category: 'Marine Services',
+                title: 'Vessel Inspections and Reviews',
+                content: `
+                    <p>Cargo expediting globally through a network of astute professionals.</p>
+                    <p>Condition surveys including hardware, crew performance and operating standards.</p>
+                    <p>Pre-purchase inspection carried out by an experienced Master and/or Chief Engineer, ensuring full coverage including maintenance aspects.</p>
+                    <p>While we offer reports under our own format and guidelines, we can also adapt to client-specific requirements.</p>
+                `
+            },
+            'cargo-claims': {
+                category: 'Marine Services',
+                title: 'Cargo Claims Handling',
+                content: `
+                    <p>P&I claims handling, including cargo testing services.</p>
+                    <p>Distressed cargoes - collection and arrange documented disposal or source potential buyers where possible.</p>
+                    <p>Attend vessels for bunker claims, cargo claims and other marine claims.</p>
+                `
+            },
+
+            // TECHNICAL SERVICES
+            'hull-services': {
+                category: 'Technical Services',
+                title: 'Underwater Hull Services',
+                content: `
+                    <p>Hull inspections, underwater repairs and cleaning offered in <strong>South Korea, Singapore, Sri Lanka, Fujairah, Suez, Spain, ARA region, Panama</strong>, and some ports in Mexico and Brazil.</p>
+                    <p>Divers are IACS class approved with all local permits. Underwater repairs include plugging of pipe openings, replacement of transducers, repairs of underwater hull breaches, and stern tube repairs.</p>
+                    <p>Our expertise after <strong>over 150 diving operations</strong> ensures competitive pricing without compromising on our excelling service standards.</p>
+                    <p>Service includes above water line cleaning to remove biofouling and oily stains. We offer Aus/NZ MPI standards cleaning, including cleaning of niche areas. Equipment includes Brushcarts with appropriate brushes, and ROVs where available.</p>
+                    <p>Photos shared immediately after inspection with recommendations, with final report within 5 days including photo and CCTV bank. Transparent quotes with minimal surcharges - no surprises!</p>
+                `
+            },
+            'cathodic-protection': {
+                category: 'Technical Services',
+                title: 'Cathodic Protection & Marine Growth Prevention',
+                content: `
+                    <p>Through our partnership with the MARPO group, we provide engineering services (support and design) for ICCP and MGPS for marine, offshore and onshore projects.</p>
+                    <p>We supply Zinc and Aluminium galvanic anodes.</p>
+                `
+            },
+            'technical-inspections': {
+                category: 'Technical Services',
+                title: 'Technical Inspections',
+                content: `
+                    <p>Ship surveys including Class annual surveys, LSA/FFA maintenance, Radio Navigation, Elevators service, support and design services for ICCP and MGPS.</p>
+                    <p>Offered in Singapore and at most major ports worldwide, including Fujairah, ARA, Med, Panama and the US.</p>
+                `
+            },
+            'prepurchase-inspections': {
+                category: 'Technical Services',
+                title: 'Pre-purchase Inspections',
+                content: `
+                    <p>Pre-purchase inspections carried out by an experienced Master and/or Chief Engineer, ensuring full coverage including maintenance aspects.</p>
+                    <p>Condition surveys including hardware, crew performance and operating standards.</p>
+                `
+            },
+            'machinery-repairs': {
+                category: 'Technical Services',
+                title: 'Deck and Engine Machinery Repairs',
+                content: `
+                    <p>Machinery overhaul and spares supply, including ME/AE/TCs. Supply of spares for deck and engine machinery, and technical stores.</p>
+                    <p>Deck and engine machinery repairs and overhauls which include anchors, anchor chains, cranes, OWS/ODME, hatch covers, cargo/ballast pumps, elevators, and main/auxiliary machineries in the engine room.</p>
+                    <p>We also undertake installation projects for dataloggers, and repairs and upgrades of radio nav equipment, including Giros, radars and ECDIS.</p>
+                `
+            },
+            'engine-room-disposal': {
+                category: 'Technical Services',
+                title: 'Engine Room Bilge and Sludge Disposal',
+                content: `
+                    <p>Bilge and sludge disposal including cleaning of bunker and other smaller tanks in the engine room.</p>
+                `
+            },
+            'sampling-testing': {
+                category: 'Technical Services',
+                title: 'Sampling and Lab Testing',
+                content: `
+                    <p>We arrange sampling and shore testing of samples from vessels including freshwater systems, Ballast Water Treatment Systems (BWTS), and EGCS Scrubber overboard discharge.</p>
+                `
+            },
+            'paint-touchup': {
+                category: 'Technical Services',
+                title: 'Ship Side Paint Touchup & Draft Marks',
+                content: `
+                    <p>We arrange ship side paint touchup and remarking of draft marks at anchorage and in port.</p>
+                `
+            },
+            'workshop-repairs': {
+                category: 'Technical Services',
+                title: 'Workshop Repairs',
+                content: `
+                    <p>Workshop repairs including ballast pump shafts, Main Engine/Auxiliary Engine components, fabrication and fitting of pipes including IGS and cargo pipes, and installation and repair projects for scrubber discharge systems.</p>
+                    <p>We also arrange overhaul and repairs of electropneumatic draft gauging systems, and repairs and upgrades of vessel loading programs.</p>
+                `
+            },
+            'riding-crew': {
+                category: 'Technical Services',
+                title: 'Riding Crew Arrangements',
+                content: `
+                    <p>Arrangement of riding crew for pre-drydock ship repairs, afloat repairs, cargo and bunker tank demucking, and general deck and machinery maintenance.</p>
+                `
+            },
+
+            // PROCUREMENT SERVICES
+            'stores-spares': {
+                category: 'Procurement Services',
+                title: 'Stores',
+                content: `
+                    <p>General vessel stores and consumables, cabin stores, and all essential supplies for vessel operations.</p>
+                `
+            },
+            'chemicals': {
+                category: 'Procurement Services',
+                title: 'Chemical Supply',
+                content: `
+                    <p>Cleaning chemicals, treatment chemicals, and specialty products for all marine applications.</p>
+                `
+            },
+            'equipment': {
+                category: 'Procurement Services',
+                title: 'Tank Cleaning Equipment',
+                content: `
+                    <p>Equipment for cargo and bunker tank cleaning operations.</p>
+                `
+            },
+            'deck-spares': {
+                category: 'Procurement Services',
+                title: 'Deck and Machinery Spares',
+                content: `
+                    <p>Replacement parts for deck equipment and engine room machinery, radio-nav and LSAFFA items, mooring ropes, and electric motors.</p>
+                `
+            },
+            'logistics': {
+                category: 'Procurement Services',
+                title: 'Logistics',
+                content: `
+                    <p>Coordination and delivery of stores and spares to vessels at port or anchorage worldwide.</p>
+                `
+            }
+        };
+
+        // Modal functions with hash routing and accessibility
+        let previouslyFocusedElement = null;
+
+        function openModal(serviceId, updateHash = true) {
+            const service = serviceDetails[serviceId];
+            if (!service) return;
+            
+            previouslyFocusedElement = document.activeElement;
+            
+            document.getElementById('modal-category').textContent = service.category;
+            document.getElementById('modal-title').textContent = service.title;
+            document.getElementById('modal-body').innerHTML = service.content + `
+                <div class="modal-cta">
+                    <a href="#contact" class="btn btn-primary" onclick="closeModal()">Request a Quote for This Service</a>
+                </div>
+            `;
+            
+            const overlay = document.getElementById('modal-overlay');
+            overlay.classList.add('active');
+            overlay.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            
+            // Update URL hash for shareable links
+            if (updateHash) {
+                history.pushState(null, '', '#service-' + serviceId);
+            }
+            
+            // Focus the close button for accessibility
+            setTimeout(() => {
+                document.querySelector('.modal-close').focus();
+            }, 100);
+        }
+
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget) return;
+            
+            const overlay = document.getElementById('modal-overlay');
+            overlay.classList.remove('active');
+            overlay.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            
+            // Remove hash from URL
+            if (window.location.hash.startsWith('#service-')) {
+                history.pushState(null, '', window.location.pathname);
+            }
+            
+            // Return focus to previous element
+            if (previouslyFocusedElement) {
+                previouslyFocusedElement.focus();
+            }
+        }
+
+        // Handle hash on page load (for shareable links)
+        function handleHashOnLoad() {
+            const hash = window.location.hash;
+            if (hash.startsWith('#service-')) {
+                const serviceId = hash.replace('#service-', '');
+                if (serviceDetails[serviceId]) {
+                    openModal(serviceId, false);
+                }
+            }
+        }
+        window.addEventListener('load', handleHashOnLoad);
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash;
+            if (hash.startsWith('#service-')) {
+                const serviceId = hash.replace('#service-', '');
+                if (serviceDetails[serviceId]) {
+                    openModal(serviceId, false);
+                }
+            } else if (!hash || hash === '#') {
+                closeModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 50;
+            header.classList.toggle('scrolled', scrolled);
+        });
+
+        // Mobile nav
+        function toggleNav() {
+            document.getElementById('nav').classList.toggle('active');
+        }
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('nav').classList.remove('active');
+                }
+            });
+        });
+
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Clients carousel
+        const clients = [
+            'Al-Iraqia Shipping',
+            'Anglo-Eastern',
+            'ASP Crew Management',
+            'ASYAD',
+            'Almana Energy',
+            'BTS Tankers',
+            'Bahri',
+            'BW Epic Kosan',
+            'Daewoo',
+            'Focal Shipping',
+            'Gard',
+            'GEM',
+            'Globenav Maritime',
+            'GSB Tankers',
+            'GTL',
+            'Hafnia',
+            'Hellenic Tankers',
+            'Integr8 Fuels',
+            'Landbridge',
+            'Marwave Shipmanagement',
+            'MOL',
+            'Navig8',
+            'Navios Maritime',
+            'Nakilat',
+            'Nextmaritime',
+            'Norden',
+            'Nordic Seascape',
+            'S&V Group',
+            'Norse Ship Management',
+            'North P&I',
+            'Peninsula Petroleum',
+            'Petrochem General',
+            'PGM',
+            'Parsh Marine',
+            'Rubis Asphalt',
+            'Safeen Invictus',
+            'Sanmar',
+            'Seamec Limited',
+            'Sentosa Shipbrokers',
+            'Schuyler Line',
+            'SLR Ocean Tankers',
+            'Synergy Group',
+            'TECO',
+            'Transbulk',
+            'UTC',
+            'Vast Shipping',
+            'Viking Marine',
+            'VKRES Investments',
+            'Wallem'
+        ];
+        const track = document.getElementById('clientsTrack');
+        [...clients, ...clients].forEach(c => {
+            const div = document.createElement('div');
+            div.className = 'client-logo';
+            div.textContent = c;
+            track.appendChild(div);
+        });
+
+        // Fade in on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Form
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
